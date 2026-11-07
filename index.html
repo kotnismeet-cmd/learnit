@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LearnIt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=JetBrains+Mono:wght@500&family=Sora:wght@600;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="top">
+  <a class="logo" href="#/"><svg viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6b88ff"/><stop offset="1" stop-color="#2dd4bf"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#lg)"/><path d="M10 11.5h8.5a4.5 4.5 0 0 1 0 9H12m0 0 3-3m-3 3 3 3" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Learn<em>It</em></span></a>
+  <div class="pills"><span id="streak" class="pill"><i></i>0 day streak</span><span id="xp" class="pill"><i class="x"></i>0 XP</span></div>
+</header>
+<main id="app"></main>
+
+<button id="chatFab" title="Ask the tutor">Ask the tutor</button>
+<aside id="chatPanel" class="hidden">
+  <div class="chat-head">
+    <b>Tutor</b>
+    <label class="small"><input type="checkbox" id="chatWeb"> search web</label>
+    <button id="chatClose" class="x">✕</button>
+  </div>
+  <div id="chatLog"></div>
+  <form id="chatForm"><input id="chatInput" placeholder="Ask anything about this course…" autocomplete="off"><button>Send</button></form>
+</aside>
+<footer class="foot"><a href="/privacy">Privacy Policy</a></footer>
+<script src="app.js"></script>
+</body>
+</html>
